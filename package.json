@@ -1,0 +1,23 @@
+{
+  "name": "metaverse-website",
+  "version": "1.0.0",
+  "description": "A website that's created to for a research project for metaverse",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aditya-s3n/Metaverse-Website.git"
+  },
+  "author": "Aditya Sen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aditya-s3n/Metaverse-Website/issues"
+  },
+  "homepage": "https://github.com/aditya-s3n/Metaverse-Website#readme",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "express": "^4.17.2"
+  }
+}
