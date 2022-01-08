@@ -4,6 +4,7 @@ const bodyParser = require("body-parser");
 
 const app = express();
 
+/***************** Start Page *****************/
 app.get("/", function(request, response) {
     response.sendFile(__dirname + "/index.html");
 }); 
