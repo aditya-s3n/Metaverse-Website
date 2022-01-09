@@ -10,13 +10,6 @@ body {
 
 /*********************************** Class Selectors ***********************************/
 /* Start Button - Root Page */
-.btn-start {
-    background-color: blue;
-}
-
-.btn-start:hover {
-    background-color: #0080FB;
-}
 
 
 /*********************************** ID Selectors ***********************************/

@@ -1,7 +1,6 @@
 //required modules
 const express = require("express");
 const bodyParser = require("body-parser");
-const { redirect } = require("express/lib/response");
 
 const app = express();
 
@@ -16,10 +15,10 @@ app.get("/", function(req, res) {
 });
 
 app.post("/", function(req, res) {
-    var value = req.body.sumbitButton;
+    let value = req.body.sumbitButton;
 
     if (value === "quiz") {
-        redirect("/quiz");
+        res.redirect("/quiz");
     }
     else {
         res.redirect("/main");
@@ -32,14 +31,25 @@ app.get("/main", function(req, res) {
     res.render("main");
 });
 
-const questions = ["Hi", "hellow", "world", "nice"];
+
 app.post("/main", function(req, res) {
-    res.redirect("/quiz", {questionArray: questions});
+    res.redirect("/quiz");
 });
 
 /***************** Quiz Page *****************/
 app.get("/quiz", function(req, res) {
     res.render("quiz");
+});
+
+app.post("/quiz", function(req, res) {
+    let button = req.body.button;
+    
+    if (button === "homepage") {
+        res.redirect("/");
+    }
+    else {
+        res.ma
+    }
 });
 
 /***************** Port Connection *****************/
