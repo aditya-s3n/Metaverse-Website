@@ -3,43 +3,64 @@
 <head>
     <!-- Add Heading -->
     <%- include("head"); -%> 
-
-    <!-- CSS Files -->
+    
     <link rel="stylesheet" href="styles.css">
-
     
 </head>
-<body>
+<body class="d-flex h-100 text-center text-white bg-dark">
 
-    <!-- Start Gif 
-    <img class="meta-img" src="https://media2.giphy.com/media/CB9yCyrnhi6f1CiWKs/giphy.gif?cid=ecf05e477xgyzwmgds02x3ktgg1lbws0xrj7lc35vicoiwuh&rid=giphy.gif&ct=g" alt="meta logo gif">
-    -->
-    
-    <!-- Title + Credits -->
-    <h1>Metaverse: An Explaination</h1>
-    <p>This website was created to share my findings / research on the metaverse.</p>
+    <div class="d-flex w-100 h-100 p-3 mx-auto flex-column">
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/Uvufun6xer8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <header class="mb-auto">
+            <div>
+                <h3 class="float-md-start mb-0">Metaverse Research Project</h3>
 
-    <!-- Start Website -->
-    <div>
-        <form action="/" method="post">
-            <div class="d-grid gap-2 col-6 mx-auto">
-                <button class="btn btn-lg btn-outline-dark" type="submit" name="sumbitButton" value="research">Start Reading</button>
-                
+                <div class="nav nav-masthead justify-content-center float-md-end">
+                <h5>Created by Aditya Sen</h5>
+                </div>
             </div>
-            <div class="d-grid gap-2 col-6 mx-auto">
-                <button class="btn btn-lg btn-outline-dark" type="submit" name="sumbitButton" value="quiz">Start Quiz</button>
-                
-            </div>
+        </header>
+
+        <main class="px-3">
+            <!-- Title + Credits -->
+            <h1>Metaverse: An Explaination</h1>
+            <p class="lead">This website was created to share my findings / research on the metaverse.</p>
             
-        </form>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Uvufun6xer8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+            <!-- Start Website -->
+            <div>
+                <form action="/" method="post">
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                        <button class="btn btn-lg btn-outline-light" type="submit" name="sumbitButton" value="research">Start Reading</button>
+                        
+                    </div>
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                        <button class="btn btn-lg btn-outline-light" type="submit" name="sumbitButton" value="quiz">Start Quiz</button>
+                        
+                    </div>
+                    
+                </form>
 
-        <h2>Created by: Aditya Sen</h2>
+            </div>
+        </main>
+        <!-- Start Gif 
+        <img class="meta-img" src="https://media2.giphy.com/media/CB9yCyrnhi6f1CiWKs/giphy.gif?cid=ecf05e477xgyzwmgds02x3ktgg1lbws0xrj7lc35vicoiwuh&rid=giphy.gif&ct=g" alt="meta logo gif">
+        -->
+        
+        
+        
 
-        <a href="https://github.com/aditya-s3n/Metaverse-Website"><i class="fab fa-github"></i> Github Repo</a>
+        
+
+        
+        
+        <footer class="mb-0 mt-auto text-white-50">
+            <a href="https://github.com/aditya-s3n/Metaverse-Website" class="text-white"><i class="fab fa-github"></i> Github Repo</a>
+        </footer>
+
     </div>
-    
 
+    
 </body>
 </html>

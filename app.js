@@ -42,14 +42,7 @@ app.get("/quiz", function(req, res) {
 });
 
 app.post("/quiz", function(req, res) {
-    let button = req.body.button;
-    
-    if (button === "homepage") {
-        res.redirect("/");
-    }
-    else {
-        res.ma
-    }
+    res.redirect("/");
 });
 
 /***************** Port Connection *****************/

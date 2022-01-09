@@ -1,15 +1,10 @@
 /*********************************** Tag Selectors ***********************************/
 body {
-    text-align: center;
-    background-image: -webkit-linear-gradient(65deg, #0668E1 50%, rgb(190, 255, 241) 50%);
-    min-height: 750px;
+    position: relative;
 
-    font-weight: bold;
-
+    background-color: rgb(70, 70, 70);
 }
 
 /*********************************** Class Selectors ***********************************/
-/* Start Button - Root Page */
-
 
 /*********************************** ID Selectors ***********************************/
