@@ -23,8 +23,9 @@ app.get("/main", function(req, res) {
     res.render("main");
 });
 
+const questions = ["Hi", "hellow", "world", "nice"];
 app.post("/main", function(req, res) {
-    res.redirect("/quiz");
+    res.redirect("/quiz", {questionArray: questions});
 });
 
 /***************** Quiz Page *****************/
