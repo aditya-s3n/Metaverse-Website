@@ -14,9 +14,17 @@ app.get("/", function(req, res) {
     res.render("index");
 });
 
+app.post("/", function(req, res) {
+    res.redirect("/main");
+});
+
 /***************** Main Content Page *****************/
 app.get("/main", function(req, res) {
     res.render("main");
+});
+
+app.post("/main", function(req, res) {
+    res.redirect("/quiz");
 });
 
 /***************** Quiz Page *****************/
@@ -26,5 +34,5 @@ app.get("/quiz", function(req, res) {
 
 /***************** Port Connection *****************/
 app.listen(process.env.PORT || 3000, function() {
-    console.log("Server started on heroku server");
+    console.log("Server Started, PORT: 3000");
 });
