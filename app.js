@@ -1,6 +1,7 @@
 //required modules
 const express = require("express");
 const bodyParser = require("body-parser");
+const { redirect } = require("express/lib/response");
 
 const app = express();
 
@@ -15,7 +16,15 @@ app.get("/", function(req, res) {
 });
 
 app.post("/", function(req, res) {
-    res.redirect("/main");
+    var value = req.body.sumbitButton;
+
+    if (value === "quiz") {
+        redirect("/quiz");
+    }
+    else {
+        res.redirect("/main");
+    }
+    
 });
 
 /***************** Main Content Page *****************/
